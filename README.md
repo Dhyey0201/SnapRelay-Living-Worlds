@@ -2,6 +2,8 @@
 
 An independent social AR experiment: one living character, many friends, evolving across their worlds.
 
+**Live demo:** <https://snaprelay-khaki.vercel.app>
+
 SnapRelay is a mobile-first web app for growing a shared 3D character and passing it between friends. The relay, character state, ownership and append-only timeline live in PostgreSQL. Guest sessions use opaque httpOnly cookies. Manual context selection is available in the core flow; camera mode is an optional camera-overlay preview, not spatial tracking or a Snapchat Lens.
 
 ## Requirements
