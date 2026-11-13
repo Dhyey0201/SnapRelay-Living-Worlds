@@ -1,0 +1,33 @@
+.milo-fallback{position:relative;display:flex;width:100%;height:100%;min-height:150px;align-items:center;justify-content:center;overflow:visible}
+.fallback-creature{position:relative;width:clamp(135px,58%,232px);aspect-ratio:.9;border:2px solid #ffffff90;border-radius:48% 48% 45% 45%;box-shadow:inset -16px -18px 0 #55468814,inset 10px 10px 0 #ffffff4a,0 18px 28px #4c416d20;animation:fallback-bob 3.2s ease-in-out infinite}
+.fallback-ear{position:absolute;top:-7%;width:25%;aspect-ratio:1;border-radius:50%;background:inherit;border:2px solid #ffffff90;z-index:-1}
+.ear-left{left:8%}.ear-right{right:8%}
+.fallback-eye{position:absolute;top:37%;width:19%;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:inset 0 -3px 0 #eee7ed}
+.eye-left{left:26%}.eye-right{right:26%}
+.fallback-eye:before{content:"";position:absolute;left:37%;top:35%;width:45%;height:48%;border-radius:50%;background:#29263a}
+.fallback-eye i{position:absolute;z-index:1;left:38%;top:35%;width:17%;height:17%;border-radius:50%;background:#fff}
+.fallback-blush{position:absolute;top:55%;width:13%;height:7%;border-radius:50%;background:#ee8c9c88}
+.blush-left{left:13%}.blush-right{right:13%}
+.fallback-smile{position:absolute;left:43%;top:56%;width:14%;height:8%;border-bottom:3px solid #634753;border-radius:0 0 50% 50%}
+.fallback-smile.sleepy{width:12%;height:2px;top:60%;left:44%;border:0;background:#634753;border-radius:2px}
+.fallback-glasses{position:absolute;left:23%;top:34%;width:54%;height:21%;display:flex;align-items:center;justify-content:space-between}
+.fallback-glasses i{display:block;width:42%;height:100%;border:3px solid #735e37;border-radius:50%;background:#ffffff15}
+.fallback-glasses b{position:absolute;left:43%;width:14%;height:3px;background:#735e37}
+.fallback-leaves{position:absolute;top:-15%;left:37%;width:28%;height:19%;border-left:3px solid #54a974}
+.fallback-leaves i{position:absolute;top:0;left:-30%;width:58%;height:68%;border-radius:100% 0 100% 0;background:#67c18b;transform:rotate(-18deg)}
+.fallback-leaves i+i{left:11%;top:-4%;transform:rotate(68deg);background:#91d5a0}
+.fallback-steam{position:absolute;top:-17%;left:38%;width:30%;height:18%;display:flex;justify-content:space-around}
+.fallback-steam i{width:4px;height:85%;border-left:2px solid #ffe0a0;border-radius:50%;transform:rotate(16deg);animation:steam-rise 1.8s ease-in-out infinite}
+.fallback-steam i+i{animation-delay:.35s}.fallback-steam i+i+i{animation-delay:.7s}
+.fallback-pixels{position:absolute;right:-10%;top:24%;width:25%;height:38%}
+.fallback-pixels i{position:absolute;width:8px;height:8px;background:#b4f1ff;border-radius:2px;box-shadow:0 0 8px #b4f1ff}
+.fallback-pixels i:nth-child(2){right:0;top:35%}.fallback-pixels i:nth-child(3){left:15%;bottom:0}.fallback-pixels i:nth-child(4){right:6%;bottom:-10%;width:5px;height:5px}
+.fallback-star{position:absolute;right:-12%;top:15%;color:#ffe173;font-size:25px;text-shadow:0 2px 8px #f8df886e}
+.fallback-ribbon{position:absolute;right:-7%;top:37%;color:#fcf3c8;font-size:25px;transform:rotate(18deg)}
+.fallback-foot{position:absolute;bottom:-7%;width:23%;height:12%;border-radius:50%;background:inherit;filter:brightness(.94)}
+.foot-left{left:20%}.foot-right{right:20%}
+.fallback-shadow{position:absolute;bottom:10%;width:35%;height:8%;border-radius:50%;background:#77708b26;filter:blur(5px)}
+.fallback-caption{position:absolute;bottom:3%;color:#827d8b;font-size:7px;font-weight:700;letter-spacing:1.15px;text-align:center}
+@keyframes fallback-bob{0%,100%{translate:0 0;rotate:-1deg}50%{translate:0 -7px;rotate:1deg}}
+@keyframes steam-rise{0%,100%{opacity:.4;translate:0 3px}50%{opacity:1;translate:0 -4px}}
+@media(prefers-reduced-motion:reduce){.fallback-creature,.fallback-steam i{animation:none}}
